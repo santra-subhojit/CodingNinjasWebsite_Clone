@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Coding Ninjas Website Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A **React.js** clone of the Coding Ninjas website, featuring modern design, smooth animations, and responsive layouts.
 
-## Available Scripts
+**Live Demo**: [Coding Ninjas Clone on Vercel](https://codingninjasclone-q57gzssve-santra-subhojits-projects.vercel.app/)
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
+- **Landing Page** with hero section, embedded video, and calls-to-action.
+- **Multiple Sections** (About, Services, Courses, Blog, Contact, FAQ, Testimonials, Profile).
+- **Smooth Animations** using **GSAP** + **ScrollTrigger** and **ScrollReveal**.
+- **Lazy-Loaded Images** (via `react-lazy-load-image-component`).
+- **Tailwind CSS** for utility-first styling.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tech Stack & Tools
+- **React** – UI framework.
+- **Tailwind CSS** – Rapid styling with utility classes.
+- **GSAP + ScrollTrigger** – Scroll-based animations.
+- **ScrollReveal** – Reveal-on-scroll animations.
+- **React Lazy Load** – Lazy loading images.
+- **Vercel** – Deployment platform.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
+- **Node.js** (v14+ recommended)
+- **npm** or **yarn**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
+1. **Clone** the repository:
 
-### `npm run eject`
+   git clone https://github.com/your-username/codingninjaswebsite_clone.git
+   cd codingninjaswebsite_clone
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Run the development server:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+npm run dev
+(If you’re using Create React App, then npm start.)
 
-## Learn More
+Open http://localhost:3000 to see the site.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**How to Add This to Your Repo**:
+1. **Create** a file named `README.md` in your project root.
+2. **Copy and paste** the content from above.
+3. **Commit & push** to GitHub:
+   ```bash
+   git add README.md
+   git commit -m "Add README"
+   git push origin main
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
