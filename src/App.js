@@ -1,24 +1,55 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import "./global.css";
+
+function LoadingScreen() {
+  return (
+    <div
+      className="w-full h-screen flex items-center justify-center bg-[#ffffff]"
+      style={{ color: "#fff" }}
+    >
+
+      <img
+        src="https://files.codingninjas.in/ninjas-running-24084-1-min-1736334057.gif"
+        alt="Loading..."
+      />
+    </div>
+  );
+}
 
 function App() {
+
+  document.body.style.margin = "0";
+  document.body.style.padding = "0";
+  document.body.style.backgroundColor = "#1c1c1c";
+
+
+  const [loading, setLoading] = useState(true);
+
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 3000); 
+
+
+    return () => clearTimeout(timer);
+  }, []);
+
+
+  if (loading) {
+    return <LoadingScreen />;
+  }
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+      <Home />
+    </Router>
   );
 }
 
